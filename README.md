@@ -4,6 +4,7 @@
 [![Docker](https://img.shields.io/badge/Docker-Enabled-blue.svg?style=flat-square&logo=docker)](https://www.docker.com/)
 [![Django](https://img.shields.io/badge/Framework-Django-green.svg?style=flat-square&logo=django)](https://www.djangoproject.com/)
 [![PostgreSQL](https://img.shields.io/badge/Database-PostgreSQL-blue.svg?style=flat-square&logo=postgresql)](https://www.postgresql.org/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 A robust, PowerShell-based automation suite designed to bridge the gap between local development and production VPS environments. This system provides a centralized dashboard for deployment, synchronization, and administrative tasks using Docker Compose.
 
@@ -111,7 +112,7 @@ The operational manager for your Docker containers that handles:
 - **Role Routing**: Dynamically starts the Web server, Celery workers, or migrations based on container command.
 - **Cleanup**: Removes stale PID files and prepares the environment for production.
 
-### �🖥️ VPS & Infrastructure: `vps management/vps_manager.ps1`
+### ��️ VPS & Infrastructure: `vps management/vps_manager.ps1`
 - **Terminal**: Opens a direct SSH session using `plink.exe`.
 - **Logs**: Streams logs from services defined in `vps_config.json`.
 - **Sideloading**: `infrastructure/sideload_images.ps1` allows saving images locally, transferring them, and loading them on the VPS to bypass registry restrictions.
@@ -132,6 +133,11 @@ The operational manager for your Docker containers that handles:
 - **Local**: Windows with PowerShell 5.1+.
 - **Tools**: Putty tools (`plink`, `pscp`) must be in the `bin/` folder.
 - **Remote**: VPS with SSH access, Docker, and Docker Compose installed.
+
+---
+
+## 📄 License
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ---
 *Created for efficient VPS management and automated deployment pipelines.*
